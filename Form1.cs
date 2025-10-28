@@ -15,21 +15,21 @@ namespace WeatherApp
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            // Przykładowe dane (na razie statyczne)
+           
             txtTemperature.Text = "12.5 °C";
             txtPrecipitation.Text = "1.2 mm";
             txtHumidity.Text = "78 %";
             txtPressure.Text = "1015 hPa";
             txtWind.Text = "14 km/h";
 
-            // Kod WMO przykładowy: 61 - deszcz umiarkowany
+            
             int wmoCode = 61;
             SetWeatherIconAndDescription(wmoCode);
         }
 
         private void SetWeatherIconAndDescription(int wmoCode)
         {
-            // Przykładowe przypisanie kodów WMO
+            
             string description = "Nieznana pogoda";
             Image icon = Properties.Resources.default_weather; // domyślna ikona
 
@@ -64,4 +64,5 @@ namespace WeatherApp
         }
     }
 }
+
 using System.ComponentMode
